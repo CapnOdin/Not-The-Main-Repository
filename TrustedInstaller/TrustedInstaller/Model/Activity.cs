@@ -5,8 +5,8 @@
 
     class Activity : ShapeModel {
 
-        public static readonly DependencyProperty RectWidthProperty = DependencyProperty.Register("Width", typeof(Double), typeof(Activity), new PropertyMetadata(0.0));
-        public static readonly DependencyProperty RectHeightProperty = DependencyProperty.Register("Length", typeof(Double), typeof(Activity), new PropertyMetadata(0.0));
+        private double rectWidth = 60;
+        private double rectHeight = 20;
 
         public Activity(bool nameable, bool connectable, string name = "", string ID = "") : base(nameable, connectable, name, ID) {
 
@@ -20,21 +20,21 @@
             }
         }
 
-        public Double RectHeight {
+        public double RectWidth {
             get {
-                return (Double)this.GetValue(RectHeightProperty);
+                return rectWidth;
             }
             set {
-                this.SetValue(RectHeightProperty, value);
+                rectWidth = value;
             }
         }
 
-        public Double RectWidth {
+        public double RectHeight {
             get {
-                return (Double)this.GetValue(RectWidthProperty);
+                return rectHeight;
             }
             set {
-                this.SetValue(RectWidthProperty, value);
+                rectHeight = value;
             }
         }
 
