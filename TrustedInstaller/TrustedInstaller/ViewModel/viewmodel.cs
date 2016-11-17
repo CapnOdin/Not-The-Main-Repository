@@ -6,5 +6,5 @@ using System.Threading.Tasks;
 
 namespace TrustedInstaller.ViewModel {
 	class viewmodel {
-		}
 	}
+}

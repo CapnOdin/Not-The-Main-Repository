@@ -6,5 +6,5 @@ using System.Threading.Tasks;
 
 namespace TrustedInstaller.View {
 	class view {
-		}
 	}
+}
