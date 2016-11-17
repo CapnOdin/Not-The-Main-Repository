@@ -4,9 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrustedInstaller.View
-{
-    class view
-    {
-    }
-}
+namespace TrustedInstaller.View {
+	class view {
+		}
+	}

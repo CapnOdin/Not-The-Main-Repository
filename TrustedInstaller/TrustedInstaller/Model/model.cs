@@ -4,9 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrustedInstaller.Model
-{
-    class model
-    {
-    }
-}
+namespace TrustedInstaller.Model {
+	class model {
+		}
+	}
