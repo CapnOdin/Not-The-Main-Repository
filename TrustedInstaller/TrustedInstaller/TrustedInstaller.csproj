@@ -56,6 +56,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Command\AddShape.cs" />
+    <Compile Include="Command\MoveShapeCommand.cs" />
     <Compile Include="Command\IUndoRedo.cs" />
     <Compile Include="Model\Activity.cs" />
     <Compile Include="Model\Shape.cs" />
