@@ -3,7 +3,7 @@
     using System.Windows;
     using System.Windows.Media;
 
-    class Activity : ShapeModel {
+    class Activity : Shape {
 
         private double rectWidth = 60;
         private double rectHeight = 20;

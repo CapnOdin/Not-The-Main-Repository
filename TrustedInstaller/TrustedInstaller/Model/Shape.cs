@@ -2,10 +2,10 @@
     using System.ComponentModel;
     using System.Windows.Shapes;
 
-    public abstract class ShapeModel : Shape, INotifyPropertyChanged {
+    public abstract class Shape : System.Windows.Shapes.Shape, INotifyPropertyChanged {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public ShapeModel(bool nameable, bool connectable, string name = "", string ID = "") {
+        public Shape(bool nameable, bool connectable, string name = "", string ID = "") {
             if(nameable) {
                 this.name = name;
             }

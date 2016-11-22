@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace TrustedInstaller.Command {
+    using System.Collections.ObjectModel;    
 
-namespace TrustedInstaller.Command {
     class AddShape : IUndoRedo {
 
+        private ObservableCollection<Shape> shapes;
+
         public AddShape() {
-            Console.WriteLine(TrustedInstaller.ViewModel.MainViewModel.kappa);
+
         }
 
         public void DoRedo() {
