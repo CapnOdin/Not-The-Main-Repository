@@ -4,10 +4,7 @@
 
 	class Activity : Shape {
 
-		private double rectWidth = 60;
-		private double rectHeight = 20;
-
-		private Rect rect = new Rect(0, 0, 0, 0);
+		private Rect rect = new Rect(100, 100, 100, 100);
 
 		public Activity(bool nameable, bool connectable, string name = "", string ID = "") : base(nameable, connectable, name, ID) {
 
