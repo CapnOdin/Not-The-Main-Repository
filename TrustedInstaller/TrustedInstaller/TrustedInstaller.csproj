@@ -59,8 +59,8 @@
     <Compile Include="Command\IUndoRedo.cs" />
     <Compile Include="Model\Activity.cs" />
     <Compile Include="Model\ShapeModel.cs" />
-    <Compile Include="ViewModel\viewmodel.cs" />
-    <Compile Include="View\view.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="View\View.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -75,7 +75,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\model.cs" />
+    <Compile Include="Model\Model.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

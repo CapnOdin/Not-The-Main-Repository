@@ -5,6 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace TrustedInstaller.View {
-	class view {
+	class View {
 	}
 }
