@@ -8,9 +8,9 @@ namespace TrustedInstaller.Command {
     interface IUndoRedoCommand {
 
         // The "Execute()" function of the example.
-        void DoRedo();
+        void Execute();
 
         // The "UnExecute()" function of the example.
-        void Undo();
+        void UnExecute();
     }
 }
