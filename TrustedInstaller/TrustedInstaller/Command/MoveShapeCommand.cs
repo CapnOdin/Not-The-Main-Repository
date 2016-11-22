@@ -3,7 +3,7 @@
 namespace TrustedInstaller.Command {
     using TrustedInstaller.Model;
 
-    class MoveShapeCommand : IUndoRedo {
+    class MoveShapeCommand : IUndoRedoCommand {
 
         private Shape shape;
 

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace TrustedInstaller.Command {
-    interface IUndoRedo {
+    interface IUndoRedoCommand {
 
         // The "Execute()" function of the example.
         void DoRedo();
