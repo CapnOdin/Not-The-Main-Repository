@@ -17,6 +17,16 @@
 			}
 		}
 
+		public double RectX {
+			get { return rect.X; }
+			set { rect.X = value; }
+		}
+
+		public double RectY {
+			get { return rect.Y; }
+			set { rect.Y = value; }
+		}
+
 		public double RectWidth {
 			get { return rect.Width; }
 			set { rect.Width = value; }
