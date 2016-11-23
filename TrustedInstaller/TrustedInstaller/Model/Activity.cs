@@ -1,55 +1,30 @@
-﻿namespace TrustedInstaller.Model {
-	using System.Windows;
-	using System.Windows.Media;
-    using System.Windows.Shapes;
-    
+﻿using System;
+using System.Windows;
+using System.Windows.Media;
 
-	class Activity : Shape {
+namespace TrustedInstaller.Model {
 
-        private Rectangle rect = new Rectangle();
+    class Activity : Shape {
+
+        private string text { get; set; }
+
+        public double activityWidth { get; set; }
+        public double activityHeight { get; set; }
+
+        private Rect rect;
 
         public Activity() {
-            rect.Stroke = System.Windows.Media.Brushes.Black;
-            rect.Fill = System.Windows.Media.Brushes.SkyBlue;
-            rect.HorizontalAlignment = HorizontalAlignment.Center;
-            rect.VerticalAlignment = VerticalAlignment.Center;
-            rect.RadiusX = 5;
-            rect.RadiusY = 5;
-            rect.Height = 50;
-            rect.Width = 100;
+            activityWidth = 100;
+            activityHeight = 100;
+            rect = new Rect(0, 0, activityWidth, activityHeight);
         }
 
-		public Activity(bool nameable, bool connectable, string name = "", string ID = "") : base(nameable, connectable, name, ID) {
-
-		}
-
-		protected override Geometry DefiningGeometry {
-			get {
-                
-				Geometry g = new RectangleGeometry(rect);
-				return g;
-			}
-		}
-
-		public double RectX {
-			get { return rect.X; }
-			set { rect.X = value; }
-		}
-
-		public double RectY {
-			get { return rect.Y; }
-			set { rect.Y = value; }
-		}
-
-		public double RectWidth {
-			get { return rect.Width; }
-			set { rect.Width = value; }
-		}
-
-		public double RectHeight {
-			get { return rect.Height; }
-			set { rect.Height = value; }
-		}
-
-	}
+        protected override Geometry DefiningGeometry {
+            get {
+                RectangleGeometry g = new RectangleGeometry(rect);
+                g.RadiusX = 20; g.RadiusY = 20;
+                return g;
+            }
+        }
+    }
 }

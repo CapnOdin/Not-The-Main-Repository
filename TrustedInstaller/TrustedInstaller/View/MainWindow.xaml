@@ -5,20 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TrustedInstaller"
 		xmlns:Model="clr-namespace:TrustedInstaller.Model"
+        xmlns:ViewModel="clr-namespace:TrustedInstaller.ViewModel"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-	
-    <Grid>
-		<Grid.RowDefinitions>
-			<RowDefinition Height="*"/>
-			<RowDefinition Height="Auto"/>
-		</Grid.RowDefinitions>
 
-        <Canvas Grid.Row="0">
-            <Model:Activity Fill="Black" />
-        </Canvas>
+    <Window.DataContext>
+        <ViewModel:MainViewModel/>
+    </Window.DataContext>
 
-		<!--<Button Grid.Row="1" Content="Click" Click="OnButtonClick" Command="{Binding Model:model.customCommandName}" />-->
+    <Canvas>
+        <Grid Width="100" Height="100" Margin="5">
+            <Model:Activity Stroke="Black"/>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">qwiejr</TextBlock>
+        </Grid>
+        
+    </Canvas>
 
-	</Grid>
 </Window>
