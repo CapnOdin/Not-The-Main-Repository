@@ -16,11 +16,11 @@ namespace TrustedInstaller.Command {
             this.offsetY = offsetY;
         }
 
-        public void DoRedo() {
+        public void Execute() {
             throw new NotImplementedException();
         }
 
-        public void Undo() {
+        public void UnExecute() {
             throw new NotImplementedException();
         }
     }

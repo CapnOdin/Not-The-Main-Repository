@@ -5,7 +5,15 @@
     public abstract class Shape : System.Windows.Shapes.Shape, INotifyPropertyChanged {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public Shape(bool nameable, bool connectable, string name = "", string id = "") {
+        // DEFAULT CONSTRUCTOR
+        public Shape() {
+            nameable = true;
+            connectable = true;
+            name = "";
+            id = "";
+        }
+
+        public Shape(bool nameable = true, bool connectable = true, string name = "", string id = "") {
             if(nameable) {
                 this.name = name;
             }

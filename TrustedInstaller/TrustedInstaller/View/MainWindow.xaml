@@ -7,15 +7,18 @@
 		xmlns:Model="clr-namespace:TrustedInstaller.Model"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-	<Grid>
+	
+    <Grid>
 		<Grid.RowDefinitions>
 			<RowDefinition Height="*"/>
 			<RowDefinition Height="Auto"/>
 		</Grid.RowDefinitions>
 
-		<Canvas Grid.Row="0" />
+        <Canvas Grid.Row="0">
+            <Model:Activity Fill="Black" />
+        </Canvas>
 
-		<Button Grid.Row="1" Content="Click" Click="OnButtonClick" Command="{Binding Model:model.customCommandName}" />
+		<!--<Button Grid.Row="1" Content="Click" Click="OnButtonClick" Command="{Binding Model:model.customCommandName}" />-->
 
 	</Grid>
 </Window>
