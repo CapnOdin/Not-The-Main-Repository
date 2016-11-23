@@ -16,7 +16,7 @@
     <Canvas>
         <Grid Width="100" Height="100" Margin="5">
             <Model:Activity Stroke="Black"/>
-            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">qwiejr</TextBlock>
+            <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Center" Text="asqersgfdxvsfdsf"/>
         </Grid>
         
     </Canvas>
